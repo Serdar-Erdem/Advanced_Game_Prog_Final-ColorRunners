@@ -1,0 +1,9 @@
+%IMPORT%
+
+namespace Assets.Scripts.Core.Editor.Code.Templates
+{
+    public class %NAME%Model : I%NAME%Model
+    {
+    
+    }
+}

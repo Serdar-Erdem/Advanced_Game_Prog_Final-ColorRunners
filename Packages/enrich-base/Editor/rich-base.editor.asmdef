@@ -1,0 +1,19 @@
+{
+    "name": "rich-base.editor",
+    "references": [
+        "GUID:e5160b5cfc335cd419f41616e228bc83",
+        "GUID:29c250a97e54e43ceba4a37b353452c2",
+        "GUID:8dbf22d4d03ec40dc88eeeba4fea25f9"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

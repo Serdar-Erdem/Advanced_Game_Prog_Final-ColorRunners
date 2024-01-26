@@ -1,0 +1,9 @@
+%IMPORT%
+
+namespace Assets.Scripts.Core.Editor.Code.Templates
+{
+    public interface %NAME%
+    {
+    
+    }
+}

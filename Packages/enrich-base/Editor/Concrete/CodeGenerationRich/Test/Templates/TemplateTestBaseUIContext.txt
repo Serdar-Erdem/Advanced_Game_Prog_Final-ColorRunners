@@ -1,0 +1,26 @@
+﻿using Rich.Base.Runtime.Concrete.Context;
+using UnityEngine;
+
+namespace Tests.Base.Context
+{
+    public class TestBaseUIContext : BaseUIContext
+    {
+        public TestBaseUIContext()
+        {
+            
+        }
+        
+        public TestBaseUIContext(GameObject rootGameObject) : base(rootGameObject)
+        {
+        
+        }
+        
+        protected override void mapBindings()
+        {
+            base.mapBindings();
+            
+            //Add stuff that you will share along with all testing contexts.
+        }
+    }
+}
+

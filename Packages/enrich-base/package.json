@@ -1,0 +1,18 @@
+{
+  "name": "rich-base",
+  "version": "1.0.2",
+  "displayName": "Rich Base",
+  "description": "Base Rich library. All Rich libraries depend on this. Contains strange-ioc.",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "keywords": [],
+  "author": {
+    "name": "Rich",
+    "email": "unity@example.com",
+    "url": "https://www.unity3d.com"
+  },
+  "dependencies": {
+    "com.unity.textmeshpro": "3.0.1"
+  },
+  "hideInEditor": false
+}

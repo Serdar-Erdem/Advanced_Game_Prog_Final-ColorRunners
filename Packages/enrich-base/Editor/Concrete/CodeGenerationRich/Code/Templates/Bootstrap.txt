@@ -1,0 +1,20 @@
+using JetBrains.Annotations;
+using strange.extensions.context.impl;
+%IMPORT%
+
+namespace Assets.Scripts.Core.Editor.Code.Templates
+{
+    public class %NAME%Root : RichMVCContextRoot
+    {
+        protected override void InitializeContext()
+        {
+            Debug.Log("Root initializing %NAME%Context");
+            
+            //Instantiate the context, passing it this instance.
+            %NAME%Context typedContext = new %NAME%Context(gameObject);
+            context = typedContext;
+            typedContext.Start();
+            typedContext.Launch();
+        }
+    }
+}

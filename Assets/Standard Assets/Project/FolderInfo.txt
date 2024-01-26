@@ -1,0 +1,1 @@
+Your asset folder for various assets that your project needs. If you are importing assets, discuss it with Project Lead and Product Owner and ask them to create a project asset addition task for you.

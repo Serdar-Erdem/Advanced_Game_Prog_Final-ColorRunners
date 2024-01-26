@@ -1,0 +1,12 @@
+using strange.extensions.command.impl;
+%IMPORT%
+
+namespace Assets.Scripts.Core.Editor.Code.Templates
+{
+    public class %NAME%Command : Command
+    {
+        public override void Execute()
+        {
+        }
+    }
+}

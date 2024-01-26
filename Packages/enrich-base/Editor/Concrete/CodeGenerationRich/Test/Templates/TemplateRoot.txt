@@ -1,0 +1,27 @@
+﻿#if UNITY_EDITOR || DEBUG
+using Rich.Base.Runtime.Concrete.Root;
+using Rich.Base.Runtime.Concrete.View;
+
+namespace %TemplateNS%
+{
+    public class %Template%Root : RichMVCContextRoot<%Template%Context>
+    {
+        protected override void BeforeCreateContext()
+        {
+            base.BeforeCreateContext();
+            var sm = GetComponentInChildren<RichScreenManagerView>();
+            if (sm != null)
+            {
+                //Clears out the panels that exist in edit mode.
+                for (var i = 0; i < sm.Layers.Length; i++)
+                {
+                    while (sm.Layers[i].childCount > 0)
+                    {
+                        DestroyImmediate(sm.Layers[i].GetChild(0).gameObject);
+                    }
+                }
+            }
+        }
+    }
+}
+#endif

@@ -1,0 +1,2 @@
+If you are not assigned with changing this folder, do not make any changes.
+If you need an asset for a project, discuss it with your project lead, product owner and get them to open a task for you to import it inside Standard Assets/Project folder instead of Core folder.

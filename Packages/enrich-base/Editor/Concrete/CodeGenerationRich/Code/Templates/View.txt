@@ -1,0 +1,10 @@
+using strange.extensions.mediation.impl;
+%IMPORT%
+
+namespace Assets.Scripts.Core.Editor.Code.Templates
+{
+    public class %NAME%View : RichView
+    {
+
+    }
+}

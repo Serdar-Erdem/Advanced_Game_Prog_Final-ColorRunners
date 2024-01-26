@@ -1,0 +1,20 @@
+﻿using UnityEngine.Events;
+using Rich.Base.Runtime.Abstract.Data.ValueObject;
+using Rich.Base.Runtime.Abstract.Function;
+using Rich.Base.Runtime.Abstract.View;
+using Rich.Base.Runtime.Concrete.Key.UnityObject;
+
+namespace %TemplateNS%
+{
+    public class %Template%View : RichView, IPanel
+    {
+	    public IPanelVo vo { get; set; }
+	    
+	    //We want this to be initialized by RichScreenManager
+	    public override bool autoRegisterWithContext { get=>false; }
+        
+        %UnityAction%
+        
+        %ListenerFunction%
+    }
+}

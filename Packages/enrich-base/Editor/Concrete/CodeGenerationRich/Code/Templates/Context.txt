@@ -1,0 +1,29 @@
+using strange.extensions.context.api;
+using strange.extensions.context.impl;
+using UnityEngine;
+//%IMPORTPOINT%
+
+namespace Assets.Scripts.Core.Editor.Code.Templates
+{
+    public class %NAME%Context : RichMVCContext
+    {
+        public %NAME%Context(GameObject root) : base(root)
+        {
+            Debug.Log("%NAME%Context Created");
+        }
+
+        protected override void mapBindings()
+        {
+            base.mapBindings();
+
+            // models & services
+            //%INJECTIONPOINT%
+
+            // views
+            //%MEDIATIONPOINT%
+
+            // commands
+            //%COMMANDPOINT%
+        }
+    }
+}

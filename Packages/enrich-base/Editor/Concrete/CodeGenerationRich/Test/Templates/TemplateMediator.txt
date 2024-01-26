@@ -1,0 +1,22 @@
+﻿using strange.extensions.mediation.impl;
+using Runtime.View.%Type%;
+
+namespace %TemplateNS%
+{
+    public class %Template%Mediator : Mediator
+    {
+        [Inject] public %Template%View view { get; set; }
+
+		%ListenerFunction%
+
+        public override void OnRegister()
+        {
+			%AddListener%
+        }
+
+        public override void OnRemove()
+        {
+			%RemoveListener%
+        }
+    }
+}

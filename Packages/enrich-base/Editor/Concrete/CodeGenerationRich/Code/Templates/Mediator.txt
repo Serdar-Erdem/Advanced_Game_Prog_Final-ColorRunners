@@ -1,0 +1,19 @@
+using strange.extensions.mediation.impl;
+%IMPORT%
+
+namespace Assets.Scripts.Core.Editor.Code.Templates
+{
+    public class %NAME%Mediator : Mediator
+    {
+        [Inject]
+        public %NAME%View view { get; set; }
+
+        public override void OnRegister()
+        {
+        }
+
+        public override void OnRemove()
+        {
+        }
+    }
+}

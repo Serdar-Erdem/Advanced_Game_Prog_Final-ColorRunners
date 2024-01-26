@@ -1,0 +1,3 @@
+Do Not Change any naming or location of objects here, CodeGenPaths specifically has paths for them.
+Base prefabs for various rich library features.
+Use ScreenRoot for creating ui roots. Make a prefab variant of ScreenRoot with your UI Root script.

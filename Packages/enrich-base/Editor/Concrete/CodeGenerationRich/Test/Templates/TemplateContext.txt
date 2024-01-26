@@ -1,0 +1,46 @@
+﻿#if UNITY_EDITOR || DEBUG
+using UnityEngine;
+using Runtime.Constants;
+using Runtime.View.%Type%;
+using Runtime.Mediators.%Type%;
+using Rich.Base.Runtime.Signals;
+using Tests.Base.Context;
+
+namespace %TemplateNS%
+{
+    public class %Template%Context : TestBaseUIContext
+    {
+        public %Template%Context()
+        {
+        
+        }
+        public %Template%Context(GameObject rootGameObject) : base(rootGameObject)
+        {
+        
+        }
+
+        protected override void mapBindings()
+        {
+            base.mapBindings();
+            
+            
+            //Our mediation binding for test case.
+            mediationBinder.Bind<%Name%%Type%View>().To<%Name%%Type%Mediator>();
+        }
+        
+        public override void Launch()
+        {
+            base.Launch();
+    
+            //Dispatching OpenPanelSignal will make it so that the auto command in the UICanvasContext handles the PanelVo creation and calling of DisplayPanelSignal.
+            //We do this at launch so that it immediately shows the panel that we are testing.
+            CoreScreenSignals.OpenPanel.Dispatch(new OpenNormalPanelArgs()
+            {
+                PanelKey = GameScreens.%Name%,
+                LayerIndex = 0,
+                IgnoreHistory = false
+            });
+        }
+    }
+}
+#endif
